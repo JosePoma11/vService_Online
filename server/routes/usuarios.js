@@ -489,6 +489,7 @@ router.put("/delete-user/:id", async (req, res) => {
     res.status(500).json({ mensaje: "Error al cambiar el estado del usuario" });
   }
 });
+
 router.get("/get-user/:id", async (req, res) => {
   try {
     const userId = req.params.id;
